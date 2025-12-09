@@ -27,14 +27,14 @@ void setup() {
     Serial.println("MPR121 #1 not found at 0x5A, check wiring!");
     while (1);
   }
-  Serial.println("MPR121 #1 found!");
+  Serial.println("MPR121 #1 connected!");
  
   // Initialize second board at 0x5B
   if (!cap2.begin(0x5B)) {
     Serial.println("MPR121 #2 not found at 0x5B, check wiring!");
     while (1);
   }
-  Serial.println("MPR121 #2 found!");
+  Serial.println("MPR121 #2 connected!");
  
   // Optional: Auto-configure both
   cap1.setAutoconfig(true);
